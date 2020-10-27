@@ -1,14 +1,18 @@
 {
   "name": "vue_crash_todolist",
+  "publicPath": "https://bharathjinka09.github.io/vue-js-todo-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^3.1.0",
     "uuid": "^3.3.2",
     "vue": "^2.5.21",
     "vue-router": "^3.0.1"
